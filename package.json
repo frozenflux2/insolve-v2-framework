@@ -1,0 +1,23 @@
+{
+  "name": "insolve-v2-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "watch": "watchify src/index.js -o static/bundle.js -v",
+    "build": "set NODE_ENV=production&&browserify -p tinyify src/index.js -o static/insolve.min.js",
+    "serve": "node serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tinyify": "^3.0.0",
+    "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "socket.io-client": "^4.4.1"
+  }
+}
